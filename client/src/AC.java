@@ -5,7 +5,7 @@ import java.net.URL;
 public class AC implements AsyncCallback {
     @Override
     public void handleResult(Object o, URL url, String s) {
-        System.out.println("Callback works");
+        System.out.println(o);
     }
 
     @Override

@@ -1,4 +1,5 @@
 import org.apache.xmlrpc.XmlRpcClient;
+import org.apache.xmlrpc.XmlRpcException;
 
 import java.util.Scanner;
 import java.util.Vector;
@@ -7,26 +8,21 @@ public class Main {
     public static void main(String[] args) {
         MyData.info();
 	    try {
-            XmlRpcClient srv = new XmlRpcClient("http://192.168.0.73:8080");
+            XmlRpcClient srv = new XmlRpcClient("http://10.182.81.112:8080");
             Scanner scan = new Scanner(System.in);
             Vector<Integer> primes = new Vector<>();
             Vector<Double> distance = new Vector<>();
-//            primes.addElement(2);
-//            primes.addElement(4);
             AC cb = new AC();
-//            srv.executeAsync("MojSerwer.myPrimes", primes, cb);
-            Object show = srv.execute("MojSerwer.show", new Vector());
-            System.out.println(show);
 
             int result = 0;
             boolean exit = false;
             while (true)
             {
                 System.out.println("Wybierz metodę:");
-                System.out.println("1: myPrimes");
+                System.out.println("1: Fibbonacci");
                 System.out.println("2: distance");
-                System.out.println("3: ");
-                System.out.println("4: show");
+                System.out.println("3: show");
+                System.out.println("4. primes");
                 System.out.println("Aby zakończyć program wprowadź 0");
                 result = scan.nextInt();
                 switch (result) {
@@ -34,12 +30,11 @@ public class Main {
                         exit = true;
                         break;
                     case 1:
-                        System.out.println("Podaj parametr min: ");
-                        primes.addElement(scan.nextInt());
-                        System.out.println("Podaj parametr max: ");
-                        primes.addElement(scan.nextInt());
-                        srv.execute("MojSerwer.myPrimes", primes);
-                        primes.clear();
+                        System.out.println("Podaj parametr n: ");
+                        Vector<Integer> n = new Vector<>();
+                        n.addElement(scan.nextInt());
+                        Object fibResult = srv.execute("MojSerwer.fib",  n);
+                        System.out.println(fibResult);
                         break;
                     case 2:
                         System.out.println("Podaj parametr lat pierwszej lokalizacji");
@@ -50,13 +45,23 @@ public class Main {
                         distance.addElement(scan.nextDouble());
                         System.out.println("Podaj parametr lon drugiej lokalizacji");
                         distance.addElement(scan.nextDouble());
-                        srv.execute("MojSerwer.distance", distance);
+                        Object distanceResult = srv.execute("MojSerwer.distance", distance);
+                        System.out.println(distanceResult);
                         distance.clear();
                         break;
                     case 3:
+                        Object showResult = srv.execute("MojSerwer.show", new Vector());
+                        System.out.println(showResult);
                         break;
                     case 4:
-                        srv.executeAsync("MojSerwer.show", new Vector(), cb);
+                        System.out.println("Podaj min: ");
+                        primes.addElement(scan.nextInt());
+                        System.out.println("Podaj max: ");
+                        primes.addElement(scan.nextInt());
+
+                        long startTime = System.currentTimeMillis();
+                        srv.executeAsync("MojSerwer.myPrimes", primes, cb);
+
                         break;
                     default:
                         exit = true;
