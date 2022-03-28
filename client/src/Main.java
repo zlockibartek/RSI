@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         MyData.info();
 	    try {
-            XmlRpcClient srv = new XmlRpcClient("http://10.182.81.112:8080");
+            XmlRpcClient srv = new XmlRpcClient("http://192.168.0.73:8080");
             Scanner scan = new Scanner(System.in);
             Vector<Integer> primes = new Vector<>();
             Vector<Double> distance = new Vector<>();
@@ -37,6 +37,10 @@ public class Main {
                         System.out.println(fibResult);
                         break;
                     case 2:
+//                        52,229675
+//                        21,012230
+//                        50,064651
+//                        19,944981
                         System.out.println("Podaj parametr lat pierwszej lokalizacji");
                         distance.addElement(scan.nextDouble());
                         System.out.println("Podaj parametr lon pierwszej lokalizacji");

@@ -91,7 +91,7 @@ public class serwerRPC {
 
     public Double distance(double lat1, double lon1, double lat2, double lon2)
     {
-        Double rad = Math.PI / 100;
+        Double rad = Math.PI / 180;
         Double radius = 6371.0;
         Double latDistance =  (lat1 - lat2) * rad;
         Double lonDistance = (lon1 - lon2) * rad;
@@ -99,8 +99,10 @@ public class serwerRPC {
                 Math.cos(lat1 * rad)  * Math.cos(lat2 * rad) *
                         Math.sin(lonDistance / 2) * Math.sin(lonDistance / 2);
         Double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+//        Double d = radius * 2 * Math.asin(Math.sqrt(a));
+//        System.out.println(d);
         Double distance = radius * c;
-        distance = this.fix(distance);
+//        distance = this.fix(distance);
         System.out.println("Dystans wynosi: " + distance + "km");
         return distance;
 
