@@ -52,7 +52,7 @@ public class Client {
         }
 
 	    try {
-            res2 = zObj2.calculate(inObj);
+           res2 = zObj2.calculate(inObj);
         } catch (Exception e) {
             System.out.println("Error");
             e.printStackTrace();

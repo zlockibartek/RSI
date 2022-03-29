@@ -16,7 +16,7 @@ public class Server {
         }
 
 	    try {
-            Registry reg = LocateRegistry.createRegistry(1099);
+            Registry reg = LocateRegistry.createRegistry(8080);
         } catch (RemoteException e) {
 	        e.printStackTrace();
         }
