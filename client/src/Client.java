@@ -3,6 +3,7 @@ import java.rmi.Naming;
 public class Client {
 
     public static void main(String[] args) {
+        MyData.info();
 	    double res;
 	    CalcObject zObj;
 	    CalcObject2 zObj2;
@@ -27,8 +28,8 @@ public class Client {
         }
 
 	    inObj = new InputType();
-	    inObj.x1 = 50.3;
-	    inObj.x2 = 9.7;
+	    inObj.x1 = 101.1;
+	    inObj.x2 = 202.2;
         inObj.operation = "add";
 
         try {
@@ -44,7 +45,7 @@ public class Client {
         System.out.println("Reference to " + addr2 + " downloaded");
 
         try {
-            res = zObj.calculate(4.1, 0.9);
+            res = zObj.calculate(0.7, 0.3);
         } catch (Exception e) {
             System.out.println("Error");
             e.printStackTrace();
