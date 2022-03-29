@@ -7,7 +7,7 @@ public class serwerRPC {
         info.info();
         try {
             System.out.println("XML_RPC Server is startnig...");
-            int port = 8080;
+            int port = 2137;
             WebServer server = new WebServer(port);
 
             server.addHandler("MojSerwer", new serwerRPC());

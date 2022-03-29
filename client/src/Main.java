@@ -8,7 +8,11 @@ public class Main {
     public static void main(String[] args) {
         MyData.info();
 	    try {
+<<<<<<< Updated upstream
             XmlRpcClient srv = new XmlRpcClient("http://10.182.86.249:2137");
+=======
+            XmlRpcClient srv = new XmlRpcClient("http://10.182.81.112:8080");
+>>>>>>> Stashed changes
             Scanner scan = new Scanner(System.in);
             Vector<Integer> primes = new Vector<>();
             Vector<Double> distance = new Vector<>();
