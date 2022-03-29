@@ -3,6 +3,8 @@ import org.apache.xmlrpc.WebServer;
 public class serwerRPC {
 
     public static void main(String[] args) {
+        MyData info = new MyData();
+        info.info();
         try {
             System.out.println("XML_RPC Server is startnig...");
             int port = 8080;
@@ -103,7 +105,7 @@ public class serwerRPC {
 //        System.out.println(d);
         Double distance = radius * c;
 //        distance = this.fix(distance);
-        System.out.println("Dystans wynosi: " + distance + "km");
+//        System.out.println("Dystans wynosi: " + distance + "km");
         return distance;
 
     }

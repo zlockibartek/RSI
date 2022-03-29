@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         MyData.info();
 	    try {
-            XmlRpcClient srv = new XmlRpcClient("http://192.168.0.73:8080");
+            XmlRpcClient srv = new XmlRpcClient("http://10.182.86.249:2137");
             Scanner scan = new Scanner(System.in);
             Vector<Integer> primes = new Vector<>();
             Vector<Double> distance = new Vector<>();
