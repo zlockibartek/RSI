@@ -14,16 +14,17 @@ public class Server {
 	    if (System.getSecurityManager() == null) {
 	        System.setSecurityManager(new SecurityManager());
         }
-
+        System.out.println(System.getSecurityManager());
 	    try {
-            Registry reg = LocateRegistry.createRegistry(8080);
+            Registry reg = LocateRegistry.createRegistry(1099);
         } catch (RemoteException e) {
 	        e.printStackTrace();
         }
 
+
 	    try {
 	        CalcObjImpl implObiektu = new CalcObjImpl();
-            Naming.rebind(args[0], implObiektu);
+            java.rmi.Naming.rebind(args[0], implObiektu);
 
             System.out.println("Server is registered now");
         } catch (Exception e) {
