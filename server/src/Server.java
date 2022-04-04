@@ -24,21 +24,9 @@ public class Server {
 
 
 	    try {
-	        CalcObjImpl implObiektu = new CalcObjImpl();
-            java.rmi.Naming.rebind(args[0], implObiektu);
-
+	        WorkerImpl worker = new WorkerImpl();
+	        Naming.rebind(args[0], worker);
             System.out.println("Server is registered now");
-        } catch (Exception e) {
-            System.out.println("Server cant be registered");
-            e.printStackTrace();
-        }
-
-        try {
-            CalcObjImpl2 implObiektu2 = new CalcObjImpl2();
-            Naming.rebind(args[1], implObiektu2);
-
-            System.out.println("Server2 is registered now");
-            System.out.println("Press Ctrl + C to stop...");
         } catch (Exception e) {
             System.out.println("Server cant be registered");
             e.printStackTrace();
