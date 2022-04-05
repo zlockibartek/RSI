@@ -17,7 +17,7 @@ public class MyData {
 
         System.out.println("---------- MyData ----------");
         System.out.println(f.format(now));
-        System.out.println("Bartłomiej Złocki 256766");
+        System.out.println("Paweł Kolman 256778");
         System.out.println(System.getProperty("user.name"));
         System.out.println(System.getProperty("os.name"));
         System.out.println(System.getProperty("java.version"));
