@@ -25,21 +25,9 @@ public class Client {
         try {
             String className = "MyData";
 
-//            boolean isOK = worker.hasClassCode(className);
-//            System.out.println(isOK);
-//            if (!isOK) {
-//                File file = new File(className + ".class");
-//                byte[] t = new byte[(int) file.length()];
-//                FileInputStream in = new FileInputStream(className + ".class");
-//                in.read(t);
-//                in.close();
-//                worker.storeClassCode(className, t);
-//                System.out.println(t);
-//
-//            }
             ResultType result;
             TaskImpl task = new TaskImpl();
-            Object[] params = {"hello", 3};
+            Object[] params = {"hello", 8};
             result = (ResultType) worker.wCompute(task, params);
             System.out.println("Result description: " + result.result_description);
             System.out.println("Result: " + result.result);
