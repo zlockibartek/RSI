@@ -58,3 +58,33 @@ C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\GrpcGreeter\GrpcGreeter\GrpcGree
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\GrpcGreeter\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\ref\GrpcGreeter.dll
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\GrpcGreeter\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.pdb
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\GrpcGreeter\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.genruntimeconfig.cache
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\appsettings.Development.json
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\appsettings.json
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\GrpcGreeter.exe
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\GrpcGreeter.deps.json
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\GrpcGreeter.runtimeconfig.json
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\GrpcGreeter.runtimeconfig.dev.json
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\GrpcGreeter.dll
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\ref\GrpcGreeter.dll
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\GrpcGreeter.pdb
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\Google.Protobuf.dll
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\Grpc.AspNetCore.Server.dll
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\Grpc.AspNetCore.Server.ClientFactory.dll
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\Grpc.Core.Api.dll
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\Grpc.Net.Client.dll
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\Grpc.Net.ClientFactory.dll
+D:\Zlocki\RSI\GrpcGreeter\bin\Debug\net5.0\Grpc.Net.Common.dll
+D:\Zlocki\RSI\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.GeneratedMSBuildEditorConfig.editorconfig
+D:\Zlocki\RSI\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.AssemblyInfoInputs.cache
+D:\Zlocki\RSI\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.AssemblyInfo.cs
+D:\Zlocki\RSI\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.csproj.CoreCompileInputs.cache
+D:\Zlocki\RSI\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.MvcApplicationPartsAssemblyInfo.cache
+D:\Zlocki\RSI\GrpcGreeter\obj\Debug\net5.0\staticwebassets\GrpcGreeter.StaticWebAssets.Manifest.cache
+D:\Zlocki\RSI\GrpcGreeter\obj\Debug\net5.0\staticwebassets\GrpcGreeter.StaticWebAssets.xml
+D:\Zlocki\RSI\GrpcGreeter\obj\Debug\net5.0\scopedcss\bundle\GrpcGreeter.styles.css
+D:\Zlocki\RSI\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.RazorTargetAssemblyInfo.cache
+D:\Zlocki\RSI\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.csproj.CopyComplete
+D:\Zlocki\RSI\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.dll
+D:\Zlocki\RSI\GrpcGreeter\obj\Debug\net5.0\ref\GrpcGreeter.dll
+D:\Zlocki\RSI\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.pdb
+D:\Zlocki\RSI\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.genruntimeconfig.cache

@@ -15,7 +15,7 @@ namespace GrpcClient
         public static void static_info()
         {
             Console.WriteLine(DateTime.Now);
-            Console.WriteLine("Paweł Kolman 256766");
+            Console.WriteLine("Paweł Kolman 256778");
             Console.WriteLine(Environment.UserName);
             Console.WriteLine(Environment.OSVersion.ToString());
             Console.WriteLine(Environment.Version.ToString());
@@ -48,15 +48,22 @@ namespace GrpcClient
                         case 1:
                             var client2 = new Greeter.GreeterClient(channel);
 
-                            Console.Write("Enter name: ");
+                            Console.Write("Enter word: ");
                             str = Console.ReadLine();
-
-                            var reply2 = client2.SayHello(new HelloRequest
+                            int repeat;
+                            Console.Write("Enter repeat number: ");
+                            string str2 = Console.ReadLine();
+                            if (int.TryParse(str2, out repeat))
                             {
-                                Name = str
-                            });
-                            Console.WriteLine("From server: " + reply2.Message);
 
+
+                                var reply2 = client2.SayHello(new HelloRequest
+                                {
+                                    Name = str,
+                                    Repeat = repeat
+                                }) ;
+                                Console.WriteLine("From server: " + reply2.Message);
+                            }
                             break;
 
                         case 2:

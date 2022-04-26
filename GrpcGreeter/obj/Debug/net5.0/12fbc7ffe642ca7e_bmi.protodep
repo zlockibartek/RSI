@@ -1,2 +1,0 @@
-obj\Debug\net5.0\Protos/Bmi.cs \
-obj\Debug\net5.0\Protos/BmiGrpc.cs: Protos/bmi.proto

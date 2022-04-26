@@ -17,10 +17,14 @@ namespace GrpcGreeter
 
         public override Task<HelloReply> SayHello(HelloRequest request, ServerCallContext context)
         {
-            return Task.FromResult(new HelloReply
+            var reply = new HelloReply();
+            var message = "";
+            for (int i=0; i < request.Repeat; i++)
             {
-                Message = "Hello " + request.Name
-            });
+                message = String.Concat(request.Name, message);
+            }
+            reply.Message = message;
+            return Task.FromResult(reply);
         }
     }
 }

@@ -62,3 +62,35 @@ C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\GrpcGreeter\GrpcGreeter\GrpcClie
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\GrpcGreeter\GrpcGreeter\GrpcClient\obj\Debug\net5.0\ref\GrpcClient.dll
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\GrpcGreeter\GrpcGreeter\GrpcClient\obj\Debug\net5.0\GrpcClient.pdb
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\GrpcGreeter\GrpcGreeter\GrpcClient\obj\Debug\net5.0\GrpcClient.genruntimeconfig.cache
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\GrpcGreeter.deps.json
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\GrpcGreeter.runtimeconfig.json
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\GrpcGreeter.runtimeconfig.dev.json
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\appsettings.Development.json
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\appsettings.json
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\GrpcGreeter.exe
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\GrpcClient.exe
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\GrpcClient.deps.json
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\GrpcClient.runtimeconfig.json
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\GrpcClient.runtimeconfig.dev.json
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\GrpcClient.dll
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\ref\GrpcClient.dll
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\GrpcClient.pdb
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\Google.Protobuf.dll
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\Grpc.AspNetCore.Server.dll
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\Grpc.AspNetCore.Server.ClientFactory.dll
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\Grpc.Core.Api.dll
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\Grpc.Net.Client.dll
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\Grpc.Net.ClientFactory.dll
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\Grpc.Net.Common.dll
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\GrpcGreeter.dll
+D:\Zlocki\RSI\GrpcClient\bin\Debug\net5.0\GrpcGreeter.pdb
+D:\Zlocki\RSI\GrpcClient\obj\Debug\net5.0\GrpcClient.csproj.AssemblyReference.cache
+D:\Zlocki\RSI\GrpcClient\obj\Debug\net5.0\GrpcClient.GeneratedMSBuildEditorConfig.editorconfig
+D:\Zlocki\RSI\GrpcClient\obj\Debug\net5.0\GrpcClient.AssemblyInfoInputs.cache
+D:\Zlocki\RSI\GrpcClient\obj\Debug\net5.0\GrpcClient.AssemblyInfo.cs
+D:\Zlocki\RSI\GrpcClient\obj\Debug\net5.0\GrpcClient.csproj.CoreCompileInputs.cache
+D:\Zlocki\RSI\GrpcClient\obj\Debug\net5.0\GrpcClient.csproj.CopyComplete
+D:\Zlocki\RSI\GrpcClient\obj\Debug\net5.0\GrpcClient.dll
+D:\Zlocki\RSI\GrpcClient\obj\Debug\net5.0\ref\GrpcClient.dll
+D:\Zlocki\RSI\GrpcClient\obj\Debug\net5.0\GrpcClient.pdb
+D:\Zlocki\RSI\GrpcClient\obj\Debug\net5.0\GrpcClient.genruntimeconfig.cache

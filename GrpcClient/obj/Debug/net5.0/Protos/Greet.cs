@@ -24,14 +24,15 @@ namespace GrpcGreeter {
     static GreetReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJQcm90b3MvZ3JlZXQucHJvdG8SBWdyZWV0IhwKDEhlbGxvUmVxdWVzdBIM",
-            "CgRuYW1lGAEgASgJIh0KCkhlbGxvUmVwbHkSDwoHbWVzc2FnZRgBIAEoCTI9",
-            "CgdHcmVldGVyEjIKCFNheUhlbGxvEhMuZ3JlZXQuSGVsbG9SZXF1ZXN0GhEu",
-            "Z3JlZXQuSGVsbG9SZXBseUIOqgILR3JwY0dyZWV0ZXJiBnByb3RvMw=="));
+            "ChJQcm90b3MvZ3JlZXQucHJvdG8SBWdyZWV0IiwKDEhlbGxvUmVxdWVzdBIM",
+            "CgRuYW1lGAEgASgJEg4KBnJlcGVhdBgCIAEoBSIdCgpIZWxsb1JlcGx5Eg8K",
+            "B21lc3NhZ2UYASABKAkyPQoHR3JlZXRlchIyCghTYXlIZWxsbxITLmdyZWV0",
+            "LkhlbGxvUmVxdWVzdBoRLmdyZWV0LkhlbGxvUmVwbHlCDqoCC0dycGNHcmVl",
+            "dGVyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcGreeter.HelloRequest), global::GrpcGreeter.HelloRequest.Parser, new[]{ "Name" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcGreeter.HelloRequest), global::GrpcGreeter.HelloRequest.Parser, new[]{ "Name", "Repeat" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcGreeter.HelloReply), global::GrpcGreeter.HelloReply.Parser, new[]{ "Message" }, null, null, null, null)
           }));
     }
@@ -77,6 +78,7 @@ namespace GrpcGreeter {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public HelloRequest(HelloRequest other) : this() {
       name_ = other.name_;
+      repeat_ = other.repeat_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -98,6 +100,18 @@ namespace GrpcGreeter {
       }
     }
 
+    /// <summary>Field number for the "repeat" field.</summary>
+    public const int RepeatFieldNumber = 2;
+    private int repeat_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Repeat {
+      get { return repeat_; }
+      set {
+        repeat_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -114,6 +128,7 @@ namespace GrpcGreeter {
         return true;
       }
       if (Name != other.Name) return false;
+      if (Repeat != other.Repeat) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -122,6 +137,7 @@ namespace GrpcGreeter {
     public override int GetHashCode() {
       int hash = 1;
       if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Repeat != 0) hash ^= Repeat.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -144,6 +160,10 @@ namespace GrpcGreeter {
         output.WriteRawTag(10);
         output.WriteString(Name);
       }
+      if (Repeat != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Repeat);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -158,6 +178,10 @@ namespace GrpcGreeter {
         output.WriteRawTag(10);
         output.WriteString(Name);
       }
+      if (Repeat != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Repeat);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -170,6 +194,9 @@ namespace GrpcGreeter {
       int size = 0;
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Repeat != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Repeat);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -185,6 +212,9 @@ namespace GrpcGreeter {
       }
       if (other.Name.Length != 0) {
         Name = other.Name;
+      }
+      if (other.Repeat != 0) {
+        Repeat = other.Repeat;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -205,6 +235,10 @@ namespace GrpcGreeter {
             Name = input.ReadString();
             break;
           }
+          case 16: {
+            Repeat = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -222,6 +256,10 @@ namespace GrpcGreeter {
             break;
           case 10: {
             Name = input.ReadString();
+            break;
+          }
+          case 16: {
+            Repeat = input.ReadInt32();
             break;
           }
         }
