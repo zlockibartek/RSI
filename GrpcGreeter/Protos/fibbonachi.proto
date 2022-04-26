@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcGreeter";
+
+
+service Fibbonachi {
+  rpc countFibbonachi (FibbonachiRequest) returns (FibbonachiReply);
+}
+
+message FibbonachiRequest {
+  int32 value = 1;
+}
+
+message FibbonachiReply {
+  int32 message = 1;
+}

@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Protos\fibbonachi.proto" />
+    <None Remove="Protos\greet.proto" />
+    <None Remove="Protos\protobuf1.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.20.1" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.45.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.45.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GrpcGreeter\GrpcGreeter.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\fibbonachi.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\greet.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\protobuf1.proto" GrpcServices="Client" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+</Project>

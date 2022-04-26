@@ -1,0 +1,20 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcGreeter";
+
+
+// The greeting service definition.
+service Fibbonachi {
+  // Sends a greeting
+  rpc countFibbonachi (FibbonachiRequest) returns (FibbonachiReply);
+}
+
+// The request message containing the user's name.
+message FibbonachiRequest {
+  int32 value = 1;
+}
+
+// The response message containing the greetings.
+message FibbonachiReply {
+  int32 message = 1;
+}

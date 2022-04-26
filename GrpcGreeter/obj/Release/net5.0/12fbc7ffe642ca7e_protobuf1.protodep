@@ -1,0 +1,2 @@
+obj\Release\net5.0\Protos/Protobuf1.cs \
+obj\Release\net5.0\Protos/Protobuf1Grpc.cs: Protos/protobuf1.proto

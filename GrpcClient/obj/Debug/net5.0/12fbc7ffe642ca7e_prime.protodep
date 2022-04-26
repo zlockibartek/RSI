@@ -1,0 +1,2 @@
+obj\Debug\net5.0\Protos/Prime.cs \
+obj\Debug\net5.0\Protos/PrimeGrpc.cs: Protos/prime.proto
