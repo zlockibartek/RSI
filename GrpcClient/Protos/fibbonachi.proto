@@ -16,5 +16,5 @@ message FibbonachiRequest {
 
 // The response message containing the greetings.
 message FibbonachiReply {
-  int32 message = 1;
+  uint64 message = 1;
 }

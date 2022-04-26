@@ -28,6 +28,7 @@ namespace GrpcClient
         static void Main(string[] args)
         {
             MyData.static_info();
+     
             using var channel = GrpcChannel.ForAddress("https://localhost:5001");
            
             Boolean end = false;
@@ -36,7 +37,7 @@ namespace GrpcClient
             while (!end)
             {
                 Console.Write("Enter option: \n");
-                Console.Write("1. Greeting\n2. Show age as days\n3. Count Fibbonachi\n");
+                Console.Write("1. Repeat\n2. Show age as days\n3. Count Fibbonachi\n0. Leave\n");
                 int option;
                 str = Console.ReadLine();
 

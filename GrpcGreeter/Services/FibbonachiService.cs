@@ -22,11 +22,18 @@ namespace GrpcGreeter.Services
             return Task.FromResult(reply);
         }
 
-        private int fibbonachi(int n)
+        private ulong fibbonachi(int n)
         {
-            if (n == 0) return 0;
-            if (n < 2) return 1;
-            return fibbonachi(n-1) + fibbonachi(n-2);
+            ulong p1 = 0;
+            ulong p2 = 0;
+            ulong c = 1;
+            for (int i =0; i< n; i++)
+            {
+                p2 = p1;
+                p1 = c;
+                c = p1 + p2;
+            }
+            return c;
         }
     }
 }

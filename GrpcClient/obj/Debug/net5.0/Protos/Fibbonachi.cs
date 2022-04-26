@@ -26,7 +26,7 @@ namespace GrpcGreeter {
           string.Concat(
             "ChdQcm90b3MvZmliYm9uYWNoaS5wcm90byIiChFGaWJib25hY2hpUmVxdWVz",
             "dBINCgV2YWx1ZRgBIAEoBSIiCg9GaWJib25hY2hpUmVwbHkSDwoHbWVzc2Fn",
-            "ZRgBIAEoBTJFCgpGaWJib25hY2hpEjcKD2NvdW50RmliYm9uYWNoaRISLkZp",
+            "ZRgBIAEoBDJFCgpGaWJib25hY2hpEjcKD2NvdW50RmliYm9uYWNoaRISLkZp",
             "YmJvbmFjaGlSZXF1ZXN0GhAuRmliYm9uYWNoaVJlcGx5Qg6qAgtHcnBjR3Jl",
             "ZXRlcmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
@@ -281,10 +281,10 @@ namespace GrpcGreeter {
 
     /// <summary>Field number for the "message" field.</summary>
     public const int MessageFieldNumber = 1;
-    private int message_;
+    private ulong message_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Message {
+    public ulong Message {
       get { return message_; }
       set {
         message_ = value;
@@ -314,7 +314,7 @@ namespace GrpcGreeter {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Message != 0) hash ^= Message.GetHashCode();
+      if (Message != 0UL) hash ^= Message.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -333,9 +333,9 @@ namespace GrpcGreeter {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Message != 0) {
+      if (Message != 0UL) {
         output.WriteRawTag(8);
-        output.WriteInt32(Message);
+        output.WriteUInt64(Message);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -347,9 +347,9 @@ namespace GrpcGreeter {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Message != 0) {
+      if (Message != 0UL) {
         output.WriteRawTag(8);
-        output.WriteInt32(Message);
+        output.WriteUInt64(Message);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -361,8 +361,8 @@ namespace GrpcGreeter {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Message != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Message);
+      if (Message != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Message);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -376,7 +376,7 @@ namespace GrpcGreeter {
       if (other == null) {
         return;
       }
-      if (other.Message != 0) {
+      if (other.Message != 0UL) {
         Message = other.Message;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -395,7 +395,7 @@ namespace GrpcGreeter {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Message = input.ReadInt32();
+            Message = input.ReadUInt64();
             break;
           }
         }
@@ -414,7 +414,7 @@ namespace GrpcGreeter {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Message = input.ReadInt32();
+            Message = input.ReadUInt64();
             break;
           }
         }
