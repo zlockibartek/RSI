@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C9C9BE45-A935-4036-A3E8-AD450374121F}</ProjectGuid>
+    <ProjectGuid>{F60EB9B5-5993-4144-AF36-67C334DC9DF8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>WCFServiceHost</RootNamespace>
-    <AssemblyName>WCFServiceHost</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>WcfServiceHost</RootNamespace>
+    <AssemblyName>WcfServiceHost</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -51,9 +51,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WCFServiceLibrary\WCFServiceLibrary.csproj">
-      <Project>{826ede6d-87b0-4aee-b309-81a321be1084}</Project>
-      <Name>WCFServiceLibrary</Name>
+    <ProjectReference Include="..\CallbackService\CallbackService.csproj">
+      <Project>{56484e82-36bc-452d-b601-d45fc3c31131}</Project>
+      <Name>CallbackService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcfService2\WcfService2.csproj">
+      <Project>{3acfcce5-9e0d-4c80-ba12-8b2b0d5e2eea}</Project>
+      <Name>WcfService2</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

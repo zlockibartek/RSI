@@ -1,35 +1,39 @@
-C:\Users\jakub\Desktop\Studia\Semestr_6\Rozproszone_Systemy_Informatyczne\WCF\WCF\WCFService\WCFServiceHost\bin\Debug\WCFServiceHost.exe.config
-C:\Users\jakub\Desktop\Studia\Semestr_6\Rozproszone_Systemy_Informatyczne\WCF\WCF\WCFService\WCFServiceHost\bin\Debug\WCFServiceHost.exe
-C:\Users\jakub\Desktop\Studia\Semestr_6\Rozproszone_Systemy_Informatyczne\WCF\WCF\WCFService\WCFServiceHost\bin\Debug\WCFServiceHost.pdb
-C:\Users\jakub\Desktop\Studia\Semestr_6\Rozproszone_Systemy_Informatyczne\WCF\WCF\WCFService\WCFServiceHost\bin\Debug\WCFServiceLibrary.dll
-C:\Users\jakub\Desktop\Studia\Semestr_6\Rozproszone_Systemy_Informatyczne\WCF\WCF\WCFService\WCFServiceHost\bin\Debug\WCFServiceLibrary.pdb
-C:\Users\jakub\Desktop\Studia\Semestr_6\Rozproszone_Systemy_Informatyczne\WCF\WCF\WCFService\WCFServiceHost\bin\Debug\WCFServiceLibrary.dll.config
-C:\Users\jakub\Desktop\Studia\Semestr_6\Rozproszone_Systemy_Informatyczne\WCF\WCF\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.csproj.AssemblyReference.cache
-C:\Users\jakub\Desktop\Studia\Semestr_6\Rozproszone_Systemy_Informatyczne\WCF\WCF\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.csproj.SuggestedBindingRedirects.cache
-C:\Users\jakub\Desktop\Studia\Semestr_6\Rozproszone_Systemy_Informatyczne\WCF\WCF\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.csproj.CoreCompileInputs.cache
-C:\Users\jakub\Desktop\Studia\Semestr_6\Rozproszone_Systemy_Informatyczne\WCF\WCF\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.csproj.CopyComplete
-C:\Users\jakub\Desktop\Studia\Semestr_6\Rozproszone_Systemy_Informatyczne\WCF\WCF\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.exe
-C:\Users\jakub\Desktop\Studia\Semestr_6\Rozproszone_Systemy_Informatyczne\WCF\WCF\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.pdb
-C:\Users\kacpe\Desktop\WCFService\WCFServiceHost\bin\Debug\WCFServiceHost.exe.config
-C:\Users\kacpe\Desktop\WCFService\WCFServiceHost\bin\Debug\WCFServiceHost.exe
-C:\Users\kacpe\Desktop\WCFService\WCFServiceHost\bin\Debug\WCFServiceHost.pdb
-C:\Users\kacpe\Desktop\WCFService\WCFServiceHost\bin\Debug\WCFServiceLibrary.dll
-C:\Users\kacpe\Desktop\WCFService\WCFServiceHost\bin\Debug\WCFServiceLibrary.pdb
-C:\Users\kacpe\Desktop\WCFService\WCFServiceHost\bin\Debug\WCFServiceLibrary.dll.config
-C:\Users\kacpe\Desktop\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.csproj.AssemblyReference.cache
-C:\Users\kacpe\Desktop\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.csproj.CoreCompileInputs.cache
-C:\Users\kacpe\Desktop\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.csproj.CopyComplete
-C:\Users\kacpe\Desktop\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.exe
-C:\Users\kacpe\Desktop\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.pdb
-C:\Users\jakub\Desktop\WCFService\WCFServiceHost\bin\Debug\WCFServiceHost.exe.config
-C:\Users\jakub\Desktop\WCFService\WCFServiceHost\bin\Debug\WCFServiceHost.exe
-C:\Users\jakub\Desktop\WCFService\WCFServiceHost\bin\Debug\WCFServiceHost.pdb
-C:\Users\jakub\Desktop\WCFService\WCFServiceHost\bin\Debug\WCFServiceLibrary.dll
-C:\Users\jakub\Desktop\WCFService\WCFServiceHost\bin\Debug\WCFServiceLibrary.pdb
-C:\Users\jakub\Desktop\WCFService\WCFServiceHost\bin\Debug\WCFServiceLibrary.dll.config
-C:\Users\jakub\Desktop\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.csproj.AssemblyReference.cache
-C:\Users\jakub\Desktop\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.csproj.SuggestedBindingRedirects.cache
-C:\Users\jakub\Desktop\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.csproj.CoreCompileInputs.cache
-C:\Users\jakub\Desktop\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.csproj.CopyComplete
-C:\Users\jakub\Desktop\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.exe
-C:\Users\jakub\Desktop\WCFService\WCFServiceHost\obj\Debug\WCFServiceHost.pdb
+C:\Users\NULL\source\repos\WcfService2\WcfServiceHost\bin\Debug\WcfServiceHost.exe.config
+C:\Users\NULL\source\repos\WcfService2\WcfServiceHost\bin\Debug\WcfServiceHost.exe
+C:\Users\NULL\source\repos\WcfService2\WcfServiceHost\bin\Debug\WcfServiceHost.pdb
+C:\Users\NULL\source\repos\WcfService2\WcfServiceHost\bin\Debug\WcfService2.dll
+C:\Users\NULL\source\repos\WcfService2\WcfServiceHost\bin\Debug\WcfService2.pdb
+C:\Users\NULL\source\repos\WcfService2\WcfServiceHost\bin\Debug\WcfService2.dll.config
+C:\Users\NULL\source\repos\WcfService2\WcfServiceHost\obj\Debug\WcfServiceHost.csprojAssemblyReference.cache
+C:\Users\NULL\source\repos\WcfService2\WcfServiceHost\obj\Debug\WcfServiceHost.csproj.CoreCompileInputs.cache
+C:\Users\NULL\source\repos\WcfService2\WcfServiceHost\obj\Debug\WcfServiceHost.csproj.CopyComplete
+C:\Users\NULL\source\repos\WcfService2\WcfServiceHost\obj\Debug\WcfServiceHost.exe
+C:\Users\NULL\source\repos\WcfService2\WcfServiceHost\obj\Debug\WcfServiceHost.pdb
+E:\studia\sem6\Rozproszone systemy\WcfService2\WcfServiceHost\bin\Debug\WcfServiceHost.exe.config
+E:\studia\sem6\Rozproszone systemy\WcfService2\WcfServiceHost\bin\Debug\WcfServiceHost.exe
+E:\studia\sem6\Rozproszone systemy\WcfService2\WcfServiceHost\bin\Debug\WcfServiceHost.pdb
+E:\studia\sem6\Rozproszone systemy\WcfService2\WcfServiceHost\bin\Debug\WcfService2.dll
+E:\studia\sem6\Rozproszone systemy\WcfService2\WcfServiceHost\bin\Debug\WcfService2.pdb
+E:\studia\sem6\Rozproszone systemy\WcfService2\WcfServiceHost\bin\Debug\WcfService2.dll.config
+E:\studia\sem6\Rozproszone systemy\WcfService2\WcfServiceHost\obj\Debug\WcfServiceHost.csprojAssemblyReference.cache
+E:\studia\sem6\Rozproszone systemy\WcfService2\WcfServiceHost\obj\Debug\WcfServiceHost.csproj.CoreCompileInputs.cache
+E:\studia\sem6\Rozproszone systemy\WcfService2\WcfServiceHost\obj\Debug\WcfServiceHost.csproj.CopyComplete
+E:\studia\sem6\Rozproszone systemy\WcfService2\WcfServiceHost\obj\Debug\WcfServiceHost.exe
+E:\studia\sem6\Rozproszone systemy\WcfService2\WcfServiceHost\obj\Debug\WcfServiceHost.pdb
+E:\studia\sem6\Rozproszone systemy\WcfService2\WcfServiceHost\bin\Debug\CallbackService.dll
+E:\studia\sem6\Rozproszone systemy\WcfService2\WcfServiceHost\bin\Debug\CallbackService.pdb
+E:\studia\sem6\Rozproszone systemy\WcfService2\WcfServiceHost\bin\Debug\CallbackService.dll.config
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceHost\bin\Debug\WcfServiceHost.exe.config
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceHost\bin\Debug\WcfServiceHost.exe
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceHost\bin\Debug\WcfServiceHost.pdb
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceHost\bin\Debug\CallbackService.dll
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceHost\bin\Debug\WcfService2.dll
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceHost\bin\Debug\CallbackService.pdb
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceHost\bin\Debug\CallbackService.dll.config
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceHost\bin\Debug\WcfService2.pdb
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceHost\bin\Debug\WcfService2.dll.config
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceHost\obj\Debug\WcfServiceHost.csproj.AssemblyReference.cache
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceHost\obj\Debug\WcfServiceHost.csproj.CoreCompileInputs.cache
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceHost\obj\Debug\WcfServiceHost.csproj.CopyComplete
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceHost\obj\Debug\WcfServiceHost.exe
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceHost\obj\Debug\WcfServiceHost.pdb

@@ -1,0 +1,13 @@
+E:\studia\sem6\Rozproszone systemy\WcfService2\CallbackService\bin\Debug\CallbackService.dll.config
+E:\studia\sem6\Rozproszone systemy\WcfService2\CallbackService\bin\Debug\CallbackService.dll
+E:\studia\sem6\Rozproszone systemy\WcfService2\CallbackService\bin\Debug\CallbackService.pdb
+E:\studia\sem6\Rozproszone systemy\WcfService2\CallbackService\obj\Debug\CallbackService.csprojAssemblyReference.cache
+E:\studia\sem6\Rozproszone systemy\WcfService2\CallbackService\obj\Debug\CallbackService.csproj.CoreCompileInputs.cache
+E:\studia\sem6\Rozproszone systemy\WcfService2\CallbackService\obj\Debug\CallbackService.dll
+E:\studia\sem6\Rozproszone systemy\WcfService2\CallbackService\obj\Debug\CallbackService.pdb
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\CallbackService\bin\Debug\CallbackService.dll.config
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\CallbackService\bin\Debug\CallbackService.dll
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\CallbackService\bin\Debug\CallbackService.pdb
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\CallbackService\obj\Debug\CallbackService.csproj.CoreCompileInputs.cache
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\CallbackService\obj\Debug\CallbackService.dll
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\CallbackService\obj\Debug\CallbackService.pdb
