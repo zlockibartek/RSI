@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.Text;
@@ -10,10 +11,24 @@ using WcfService2;
 
 namespace WcfServiceHost
 {
+    class MyData
+    {
+        public static void static_info()
+        {
+            Console.WriteLine(DateTime.Now);
+            Console.WriteLine("Bartłomiej Złocki 256766");
+            Console.WriteLine(Environment.UserName);
+            Console.WriteLine(Environment.OSVersion.ToString());
+            Console.WriteLine(Environment.Version.ToString());
+            Console.WriteLine(Dns.GetHostEntry(Dns.GetHostName()).AddressList[0].ToString());
+
+        }
+    }
     class Program
     {
         static void Main(string[] args)
         {
+            MyData.static_info();
             Uri baseAddress = new Uri("http://localhost:8002/wcf");
             ServiceHost myHost = new ServiceHost(typeof(MyComplexCalc), baseAddress);
             WSHttpBinding myBinding = new WSHttpBinding();

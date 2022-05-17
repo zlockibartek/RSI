@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.ServiceModel;
 using System.Text;
 using System.Threading;
@@ -13,12 +14,26 @@ using WcfServiceClient.ServiceReference3;
 
 namespace WcfServiceClient
 {
+    class MyData
+    {
+        public static void static_info()
+        {
+            Console.WriteLine(DateTime.Now);
+            Console.WriteLine("Paweł Kolman 256778");
+            Console.WriteLine(Environment.UserName);
+            Console.WriteLine(Environment.OSVersion.ToString());
+            Console.WriteLine(Environment.Version.ToString());
+            Console.WriteLine(Dns.GetHostEntry(Dns.GetHostName()).AddressList[0].ToString());
+
+        }
+    }
     class Program
     {
         static void Main(string[] args)
         {
-                        SuperCalcCallback myCbHandler = new SuperCalcCallback();
-                        InstanceContext instanceContext = new InstanceContext(myCbHandler);
+            MyData.static_info();
+            SuperCalcCallback myCbHandler = new SuperCalcCallback();
+            InstanceContext instanceContext = new InstanceContext(myCbHandler);
             while(true)
             {
                 Console.WriteLine("Choose action:");
