@@ -35,9 +35,19 @@ namespace WcfServiceClient
             }
         }
 
-        public void RecordResult(PersonalData[] data)
+        public void RecordResult(PersonalData[] datas)
         {
-            throw new NotImplementedException();
+            foreach (var data in datas)
+            {
+                Console.WriteLine(data.age + " " + data.name);
+
+            }
+        }
+
+        public void RecordCount(int count)
+        {
+            Console.WriteLine(count);
+
         }
     }
 }

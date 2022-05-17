@@ -18,11 +18,13 @@ namespace CallbackService
         [OperationContract(IsOneWay = true)]
         void Fibonacci(int n);
         [OperationContract(IsOneWay = true)]
-        void addRecord(PersonalData data);
+        void addRecord(string name, int age);
         [OperationContract(IsOneWay = true)]
         void removeRecord(PersonalData data);
         [OperationContract(IsOneWay = true)]
         void findRecord(PersonalData data);
+
+        void count();
     }
 
 

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://localhost:8002/wcf?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CallbackService" />
-  <xs:import schemaLocation="http://localhost:8002/wcf?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WcfService2" />
+  <xs:import schemaLocation="http://localhost:8002/wcf?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService2" />
   <xs:element name="Fun1">
     <xs:complexType>
       <xs:sequence>
@@ -21,88 +20,48 @@
       <xs:sequence />
     </xs:complexType>
   </xs:element>
-  <xs:element name="Factorial">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="n" type="xs:double" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="DoSomething">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="sec" type="xs:int" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="Fibonacci">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="n" type="xs:int" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="addRecord">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CallbackService" minOccurs="0" name="data" nillable="true" type="q1:PersonalData" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="removeRecord">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CallbackService" minOccurs="0" name="data" nillable="true" type="q2:PersonalData" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="findRecord">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CallbackService" minOccurs="0" name="data" nillable="true" type="q3:PersonalData" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="FactorialResult">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="result" type="xs:double" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="DoSomethingResult">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="result" nillable="true" type="xs:string" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="FibonacciResult">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="n" type="xs:int" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="RecordResult">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CallbackService" minOccurs="0" name="data" nillable="true" type="q4:ArrayOfPersonalData" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
   <xs:element name="addCNum">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="n1" nillable="true" type="q5:ComplexNum" />
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="n2" nillable="true" type="q6:ComplexNum" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="n1" nillable="true" type="q1:ComplexNum" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="n2" nillable="true" type="q2:ComplexNum" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="addCNumResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="addCNumResult" nillable="true" type="q7:ComplexNum" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="addCNumResult" nillable="true" type="q3:ComplexNum" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="multCNum">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="n1" nillable="true" type="q4:ComplexNum" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="n2" nillable="true" type="q5:ComplexNum" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="multCNumResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="multCNumResult" nillable="true" type="q6:ComplexNum" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="divCNum">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="n1" nillable="true" type="q7:ComplexNum" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="n2" nillable="true" type="q8:ComplexNum" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="divCNumResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="divCNumResult" nillable="true" type="q9:ComplexNum" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

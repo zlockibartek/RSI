@@ -73,140 +73,6 @@ namespace WcfServiceClient.ServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.ISuperCalc", CallbackContract=typeof(WcfServiceClient.ServiceReference1.ISuperCalcCallback), SessionMode=System.ServiceModel.SessionMode.Required)]
-    public interface ISuperCalc {
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/Factorial")]
-        void Factorial(double n);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/Factorial")]
-        System.Threading.Tasks.Task FactorialAsync(double n);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/DoSomething")]
-        void DoSomething(int sec);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/DoSomething")]
-        System.Threading.Tasks.Task DoSomethingAsync(int sec);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/Fibonacci")]
-        void Fibonacci(int n);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/Fibonacci")]
-        System.Threading.Tasks.Task FibonacciAsync(int n);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/addRecord")]
-        void addRecord(CallbackService.PersonalData data);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/addRecord")]
-        System.Threading.Tasks.Task addRecordAsync(CallbackService.PersonalData data);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/removeRecord")]
-        void removeRecord(CallbackService.PersonalData data);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/removeRecord")]
-        System.Threading.Tasks.Task removeRecordAsync(CallbackService.PersonalData data);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/findRecord")]
-        void findRecord(CallbackService.PersonalData data);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/findRecord")]
-        System.Threading.Tasks.Task findRecordAsync(CallbackService.PersonalData data);
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ISuperCalcCallback {
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/FactorialResult")]
-        void FactorialResult(double result);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/DoSomethingResult")]
-        void DoSomethingResult(string result);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/FibonacciResult")]
-        void FibonacciResult(int n);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/RecordResult")]
-        void RecordResult(CallbackService.PersonalData[] data);
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ISuperCalcChannel : WcfServiceClient.ServiceReference1.ISuperCalc, System.ServiceModel.IClientChannel {
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class SuperCalcClient : System.ServiceModel.DuplexClientBase<WcfServiceClient.ServiceReference1.ISuperCalc>, WcfServiceClient.ServiceReference1.ISuperCalc {
-        
-        public SuperCalcClient(System.ServiceModel.InstanceContext callbackInstance) : 
-                base(callbackInstance) {
-        }
-        
-        public SuperCalcClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) : 
-                base(callbackInstance, endpointConfigurationName) {
-        }
-        
-        public SuperCalcClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) : 
-                base(callbackInstance, endpointConfigurationName, remoteAddress) {
-        }
-        
-        public SuperCalcClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(callbackInstance, endpointConfigurationName, remoteAddress) {
-        }
-        
-        public SuperCalcClient(System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(callbackInstance, binding, remoteAddress) {
-        }
-        
-        public void Factorial(double n) {
-            base.Channel.Factorial(n);
-        }
-        
-        public System.Threading.Tasks.Task FactorialAsync(double n) {
-            return base.Channel.FactorialAsync(n);
-        }
-        
-        public void DoSomething(int sec) {
-            base.Channel.DoSomething(sec);
-        }
-        
-        public System.Threading.Tasks.Task DoSomethingAsync(int sec) {
-            return base.Channel.DoSomethingAsync(sec);
-        }
-        
-        public void Fibonacci(int n) {
-            base.Channel.Fibonacci(n);
-        }
-        
-        public System.Threading.Tasks.Task FibonacciAsync(int n) {
-            return base.Channel.FibonacciAsync(n);
-        }
-        
-        public void addRecord(CallbackService.PersonalData data) {
-            base.Channel.addRecord(data);
-        }
-        
-        public System.Threading.Tasks.Task addRecordAsync(CallbackService.PersonalData data) {
-            return base.Channel.addRecordAsync(data);
-        }
-        
-        public void removeRecord(CallbackService.PersonalData data) {
-            base.Channel.removeRecord(data);
-        }
-        
-        public System.Threading.Tasks.Task removeRecordAsync(CallbackService.PersonalData data) {
-            return base.Channel.removeRecordAsync(data);
-        }
-        
-        public void findRecord(CallbackService.PersonalData data) {
-            base.Channel.findRecord(data);
-        }
-        
-        public System.Threading.Tasks.Task findRecordAsync(CallbackService.PersonalData data) {
-            return base.Channel.findRecordAsync(data);
-        }
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.ICalculator")]
     public interface ICalculator {
         
@@ -215,6 +81,18 @@ namespace WcfServiceClient.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/addCNum", ReplyAction="http://tempuri.org/ICalculator/addCNumResponse")]
         System.Threading.Tasks.Task<WcfService2.ComplexNum> addCNumAsync(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/multCNum", ReplyAction="http://tempuri.org/ICalculator/multCNumResponse")]
+        WcfService2.ComplexNum multCNum(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/multCNum", ReplyAction="http://tempuri.org/ICalculator/multCNumResponse")]
+        System.Threading.Tasks.Task<WcfService2.ComplexNum> multCNumAsync(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/divCNum", ReplyAction="http://tempuri.org/ICalculator/divCNumResponse")]
+        WcfService2.ComplexNum divCNum(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/divCNum", ReplyAction="http://tempuri.org/ICalculator/divCNumResponse")]
+        System.Threading.Tasks.Task<WcfService2.ComplexNum> divCNumAsync(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -250,6 +128,22 @@ namespace WcfServiceClient.ServiceReference1 {
         
         public System.Threading.Tasks.Task<WcfService2.ComplexNum> addCNumAsync(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2) {
             return base.Channel.addCNumAsync(n1, n2);
+        }
+        
+        public WcfService2.ComplexNum multCNum(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2) {
+            return base.Channel.multCNum(n1, n2);
+        }
+        
+        public System.Threading.Tasks.Task<WcfService2.ComplexNum> multCNumAsync(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2) {
+            return base.Channel.multCNumAsync(n1, n2);
+        }
+        
+        public WcfService2.ComplexNum divCNum(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2) {
+            return base.Channel.divCNum(n1, n2);
+        }
+        
+        public System.Threading.Tasks.Task<WcfService2.ComplexNum> divCNumAsync(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2) {
+            return base.Channel.divCNumAsync(n1, n2);
         }
     }
 }

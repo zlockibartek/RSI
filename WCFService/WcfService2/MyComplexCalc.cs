@@ -16,6 +16,22 @@ namespace WcfService2
             Console.WriteLine("Called addCNum(" + n1 + ", " + n2 + ")");
             return new ComplexNum(n1.real + n2.real, n1.imag + n2.imag);
         }
+        public ComplexNum multCNum(ComplexNum n1, ComplexNum n2)
+        {
+            Console.WriteLine("Called multCNum(" + n1 + ", " + n2 + ")");
+            var real = n1.real * n2.real - n1.imag * n2.imag;
+            var imag = n1.real * n2.imag + n2.real * n1.imag;
+            return new ComplexNum(real, imag);
+        }
+        public ComplexNum divCNum(ComplexNum n1, ComplexNum n2)
+        {
+            Console.WriteLine("Called divCNum(" + n1 + ", " + n2 + ")");
+            var bottom = n2.real * n2.real + n2.imag * n2.imag;
+            var real = n1.real * n2.real + n1.imag * n2.imag;
+            var imag = n1.imag * n2.real - n1.real * n2.imag;
+            return new ComplexNum(real / bottom, imag / bottom);
+        }
+
     }
 
     [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple)]

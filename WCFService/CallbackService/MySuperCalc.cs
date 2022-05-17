@@ -51,21 +51,29 @@ namespace CallbackService
             callback.FibonacciResult(a);
         }
 
-        public void addRecord(PersonalData data)
+        public void addRecord(string name, int age)
         {
-            datas.Add(data);
+            datas.Add(new PersonalData(name, age));
+            Console.WriteLine(name);
             callback.RecordResult(datas);
 
         }
         public void removeRecord(PersonalData data)
         {
-            datas.Remove(data);
+            var result = datas.Find(x => x.name == data.name && x.age == data.age);
+            datas.Remove(result);
             callback.RecordResult(datas);
         }
         public void findRecord(PersonalData data)
         {
             datas.Contains(data);
             callback.RecordResult(datas);
+        }
+
+        public void count()
+        {
+            //callback.RecordCount(datas.Count());
+
         }
     }
 }

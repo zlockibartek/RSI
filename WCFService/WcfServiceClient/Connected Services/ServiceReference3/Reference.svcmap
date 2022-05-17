@@ -22,11 +22,12 @@
     <MetadataSource Address="http://localhost:8002/wcf3" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="wcf3.xsd" MetadataType="Schema" ID="82838477-631a-493b-be84-0759fbd1f722" SourceId="1" SourceUrl="http://localhost:8002/wcf3?xsd=xsd0" />
-    <MetadataFile FileName="wcf3.disco" MetadataType="Disco" ID="6b4ca355-ecf4-443f-85b6-c46f6898b99d" SourceId="1" SourceUrl="http://localhost:8002/wcf3?disco" />
     <MetadataFile FileName="MySuperCalc.wsdl" MetadataType="Wsdl" ID="a86e5964-5b69-4b53-953f-219017d82a2b" SourceId="1" SourceUrl="http://localhost:8002/wcf3?wsdl" />
+    <MetadataFile FileName="wcf3.disco" MetadataType="Disco" ID="6b4ca355-ecf4-443f-85b6-c46f6898b99d" SourceId="1" SourceUrl="http://localhost:8002/wcf3?disco" />
     <MetadataFile FileName="wcf31.xsd" MetadataType="Schema" ID="1843267e-9d29-45fd-ad83-a420286d9f56" SourceId="1" SourceUrl="http://localhost:8002/wcf3?xsd=xsd1" />
+    <MetadataFile FileName="wcf33.xsd" MetadataType="Schema" ID="bc2ebf9b-30a9-4aba-900a-f76047523efb" SourceId="1" SourceUrl="http://localhost:8002/wcf3?xsd=xsd3" />
     <MetadataFile FileName="wcf32.xsd" MetadataType="Schema" ID="98ced5e1-5429-4e7e-81dd-9717085a5e65" SourceId="1" SourceUrl="http://localhost:8002/wcf3?xsd=xsd2" />
+    <MetadataFile FileName="wcf3.xsd" MetadataType="Schema" ID="82838477-631a-493b-be84-0759fbd1f722" SourceId="1" SourceUrl="http://localhost:8002/wcf3?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

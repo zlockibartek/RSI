@@ -73,6 +73,81 @@ namespace WcfServiceClient.ServiceReference3 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference3.ICalculator")]
+    public interface ICalculator {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/addCNum", ReplyAction="http://tempuri.org/ICalculator/addCNumResponse")]
+        WcfService2.ComplexNum addCNum(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/addCNum", ReplyAction="http://tempuri.org/ICalculator/addCNumResponse")]
+        System.Threading.Tasks.Task<WcfService2.ComplexNum> addCNumAsync(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/multCNum", ReplyAction="http://tempuri.org/ICalculator/multCNumResponse")]
+        WcfService2.ComplexNum multCNum(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/multCNum", ReplyAction="http://tempuri.org/ICalculator/multCNumResponse")]
+        System.Threading.Tasks.Task<WcfService2.ComplexNum> multCNumAsync(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/divCNum", ReplyAction="http://tempuri.org/ICalculator/divCNumResponse")]
+        WcfService2.ComplexNum divCNum(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/divCNum", ReplyAction="http://tempuri.org/ICalculator/divCNumResponse")]
+        System.Threading.Tasks.Task<WcfService2.ComplexNum> divCNumAsync(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2);
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface ICalculatorChannel : WcfServiceClient.ServiceReference3.ICalculator, System.ServiceModel.IClientChannel {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class CalculatorClient : System.ServiceModel.ClientBase<WcfServiceClient.ServiceReference3.ICalculator>, WcfServiceClient.ServiceReference3.ICalculator {
+        
+        public CalculatorClient() {
+        }
+        
+        public CalculatorClient(string endpointConfigurationName) : 
+                base(endpointConfigurationName) {
+        }
+        
+        public CalculatorClient(string endpointConfigurationName, string remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public CalculatorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public CalculatorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(binding, remoteAddress) {
+        }
+        
+        public WcfService2.ComplexNum addCNum(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2) {
+            return base.Channel.addCNum(n1, n2);
+        }
+        
+        public System.Threading.Tasks.Task<WcfService2.ComplexNum> addCNumAsync(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2) {
+            return base.Channel.addCNumAsync(n1, n2);
+        }
+        
+        public WcfService2.ComplexNum multCNum(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2) {
+            return base.Channel.multCNum(n1, n2);
+        }
+        
+        public System.Threading.Tasks.Task<WcfService2.ComplexNum> multCNumAsync(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2) {
+            return base.Channel.multCNumAsync(n1, n2);
+        }
+        
+        public WcfService2.ComplexNum divCNum(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2) {
+            return base.Channel.divCNum(n1, n2);
+        }
+        
+        public System.Threading.Tasks.Task<WcfService2.ComplexNum> divCNumAsync(WcfService2.ComplexNum n1, WcfService2.ComplexNum n2) {
+            return base.Channel.divCNumAsync(n1, n2);
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference3.ISuperCalc", CallbackContract=typeof(WcfServiceClient.ServiceReference3.ISuperCalcCallback), SessionMode=System.ServiceModel.SessionMode.Required)]
     public interface ISuperCalc {
         
@@ -95,10 +170,10 @@ namespace WcfServiceClient.ServiceReference3 {
         System.Threading.Tasks.Task FibonacciAsync(int n);
         
         [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/addRecord")]
-        void addRecord(CallbackService.PersonalData data);
+        void addRecord(string name, int age);
         
         [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/addRecord")]
-        System.Threading.Tasks.Task addRecordAsync(CallbackService.PersonalData data);
+        System.Threading.Tasks.Task addRecordAsync(string name, int age);
         
         [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ISuperCalc/removeRecord")]
         void removeRecord(CallbackService.PersonalData data);
@@ -181,12 +256,12 @@ namespace WcfServiceClient.ServiceReference3 {
             return base.Channel.FibonacciAsync(n);
         }
         
-        public void addRecord(CallbackService.PersonalData data) {
-            base.Channel.addRecord(data);
+        public void addRecord(string name, int age) {
+            base.Channel.addRecord(name, age);
         }
         
-        public System.Threading.Tasks.Task addRecordAsync(CallbackService.PersonalData data) {
-            return base.Channel.addRecordAsync(data);
+        public System.Threading.Tasks.Task addRecordAsync(string name, int age) {
+            return base.Channel.addRecordAsync(name, age);
         }
         
         public void removeRecord(CallbackService.PersonalData data) {

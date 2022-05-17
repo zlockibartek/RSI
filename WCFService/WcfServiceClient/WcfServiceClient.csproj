@@ -66,7 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Connected Services\ServiceReference1\MySuperCalc1.wsdl" />
+    <None Include="Connected Services\ServiceReference1\MyComplexCalc.wsdl" />
     <None Include="Connected Services\ServiceReference1\wcf.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -74,9 +74,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServiceReference1\wcf2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServiceReference1\wcf3.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServiceReference2\AsyncService.wsdl" />
@@ -94,6 +91,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServiceReference3\wcf32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference3\wcf33.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\DataSources\WcfService2.ComplexNum.datasource" />
@@ -147,6 +147,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\wcf.disco" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
@@ -157,9 +160,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\wcf.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

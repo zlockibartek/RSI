@@ -23,3 +23,17 @@ C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceClient\obj\De
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceClient\bin\Debug\CallbackService.dll
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceClient\bin\Debug\CallbackService.pdb
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\temp\WcfServiceClient\bin\Debug\CallbackService.dll.config
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\WCFService\WcfServiceClient\bin\Debug\WcfServiceClient.exe.config
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\WCFService\WcfServiceClient\bin\Debug\WcfServiceClient.exe
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\WCFService\WcfServiceClient\bin\Debug\WcfServiceClient.pdb
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\WCFService\WcfServiceClient\bin\Debug\CallbackService.dll
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\WCFService\WcfServiceClient\bin\Debug\WcfService2.dll
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\WCFService\WcfServiceClient\bin\Debug\CallbackService.pdb
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\WCFService\WcfServiceClient\bin\Debug\CallbackService.dll.config
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\WCFService\WcfServiceClient\bin\Debug\WcfService2.pdb
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\WCFService\WcfServiceClient\bin\Debug\WcfService2.dll.config
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\WCFService\WcfServiceClient\obj\Debug\WcfServiceClient.csproj.AssemblyReference.cache
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\WCFService\WcfServiceClient\obj\Debug\WcfServiceClient.csproj.CoreCompileInputs.cache
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\WCFService\WcfServiceClient\obj\Debug\WcfServiceClient.csproj.CopyComplete
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\WCFService\WcfServiceClient\obj\Debug\WcfServiceClient.exe
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\WCFService\WcfServiceClient\obj\Debug\WcfServiceClient.pdb

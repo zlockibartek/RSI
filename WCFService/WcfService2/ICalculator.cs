@@ -13,6 +13,10 @@ namespace WcfService2
     {
         [OperationContract]
         ComplexNum addCNum(ComplexNum n1, ComplexNum n2);
+        [OperationContract]
+        ComplexNum multCNum(ComplexNum n1, ComplexNum n2);
+        [OperationContract]
+        ComplexNum divCNum(ComplexNum n1, ComplexNum n2);
 
 
         // TODO: dodaj tutaj operacje usługi
