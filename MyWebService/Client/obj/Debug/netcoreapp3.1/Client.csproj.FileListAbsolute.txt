@@ -1,0 +1,52 @@
+C:\Users\dell\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.exe
+C:\Users\dell\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.deps.json
+C:\Users\dell\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.runtimeconfig.json
+C:\Users\dell\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.runtimeconfig.dev.json
+C:\Users\dell\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.dll
+C:\Users\dell\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.pdb
+C:\Users\dell\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.AssemblyInfoInputs.cache
+C:\Users\dell\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.AssemblyInfo.cs
+C:\Users\dell\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.dll
+C:\Users\dell\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.pdb
+C:\Users\dell\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.genruntimeconfig.cache
+C:\Users\dell\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\dell\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\dell\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\dell\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.csproj.CopyComplete
+C:\Users\celli\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.exe
+C:\Users\celli\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.deps.json
+C:\Users\celli\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.runtimeconfig.json
+C:\Users\celli\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.runtimeconfig.dev.json
+C:\Users\celli\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.dll
+C:\Users\celli\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.pdb
+C:\Users\celli\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\celli\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\celli\source\repos\MyWebService\Client\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\celli\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.csproj.AssemblyReference.cache
+C:\Users\celli\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\celli\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.AssemblyInfoInputs.cache
+C:\Users\celli\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.AssemblyInfo.cs
+C:\Users\celli\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.csproj.CoreCompileInputs.cache
+C:\Users\celli\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.csproj.CopyComplete
+C:\Users\celli\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.dll
+C:\Users\celli\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.pdb
+C:\Users\celli\source\repos\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.genruntimeconfig.cache
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.exe
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.deps.json
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.runtimeconfig.json
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.runtimeconfig.dev.json
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.dll
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\bin\Debug\netcoreapp3.1\Client.pdb
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.AssemblyInfoInputs.cache
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.AssemblyInfo.cs
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.csproj.CoreCompileInputs.cache
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.csproj.CopyComplete
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.dll
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.pdb
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.genruntimeconfig.cache

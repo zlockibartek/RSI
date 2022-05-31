@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "KHwfv161Ts1w+q4yKXYeJcRZGQDRuLTxfPmmRYmqCfs3SCkSCaRkXsoONh0nSvQg+GihsFDMGOIjd/7v6oWSPQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\zlock\\OneDrive\\Pulpit\\Studia\\Semestr 6\\RSI\\Lab1_2\\MyWebService\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zlock\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\zlock\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
