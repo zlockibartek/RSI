@@ -28,8 +28,19 @@ namespace Client
                 {
                     Console.WriteLine("Podaj metode:");
                     
+                    //string uri = "http://zpi03.solidcp.ii.pwr.edu.pl/RestService.svc";
                     string method = Console.ReadLine();
+                   /* Console.WriteLine("1: Wybierz wszystkie książki\n");
+                    Console.WriteLine("2: Dodaj książkę\n");
+                    Console.WriteLine("3: Aktualizuj książke\n");
+                    Console.WriteLine("4: Usuń książkę\n");
+                    string option = Console.ReadLine();*/
 
+                    /*switch (option)
+                    {
+                        case 1:
+                            break;
+                    }*/
 
                     Console.WriteLine("Podaj URI:");
                     string uri = Console.ReadLine();
