@@ -50,3 +50,4 @@ C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\o
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.dll
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.pdb
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.genruntimeconfig.cache
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\Client\obj\Debug\netcoreapp3.1\Client.csproj.AssemblyReference.cache

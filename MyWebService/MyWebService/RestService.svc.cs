@@ -21,8 +21,8 @@ namespace MyWebService
 
         private static List<Author> authors = new List<Author>
         {
-            new Author {ID=1, Name="Bartlomiej", Surname="Goral"},
-            new Author {ID=2, Name="Krzyszotf", Surname="Polowczuk"},
+            new Author {ID=1, Name="Bartlomiej", Surname="Złocki"},
+            new Author {ID=2, Name="Paweł", Surname="Kolman"},
         };
 
         public List<Book> getAllXml()

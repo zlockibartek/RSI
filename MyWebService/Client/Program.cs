@@ -26,51 +26,95 @@ namespace Client
             {
                 try
                 {
-                    Console.WriteLine("Podaj metode:");
-                    
                     //string uri = "http://zpi03.solidcp.ii.pwr.edu.pl/RestService.svc";
-                    string method = Console.ReadLine();
-                   /* Console.WriteLine("1: Wybierz wszystkie książki\n");
-                    Console.WriteLine("2: Dodaj książkę\n");
-                    Console.WriteLine("3: Aktualizuj książke\n");
-                    Console.WriteLine("4: Usuń książkę\n");
-                    string option = Console.ReadLine();*/
+                    string uri = "http://localhost:49736/RestService.svc";
 
-                    /*switch (option)
+                    Console.WriteLine("1: Wybierz wszystkie książki");
+                    Console.WriteLine("2: Wybierz książkę o podanym ID");
+                    Console.WriteLine("3. Wybierz wszystkich autorów");
+                    Console.WriteLine("4: Wybierz autora o podanym ID");
+                    Console.WriteLine("5: Dodaj książkę");
+                    Console.WriteLine("6: Aktualizuj książke");
+                    Console.WriteLine("7: Usuń książkę");
+
+                    int option = Convert.ToInt32(Console.ReadLine());
+                    int id = 0;
+                    string method = "get";
+                        string json = "{ ";
+                    switch (option)
                     {
                         case 1:
+                            uri += "/json/items";
                             break;
-                    }*/
-
-                    Console.WriteLine("Podaj URI:");
-                    string uri = Console.ReadLine();
+                        case 2:
+                            Console.WriteLine("Podaj ID:");
+                            id = Convert.ToInt32(Console.ReadLine());
+                            uri += "/json/items/" + id;
+                            break;
+                        case 3:
+                            uri += "/json/authors";
+                            break;
+                        case 4:
+                            Console.WriteLine("Podaj ID:");
+                            id = Convert.ToInt32(Console.ReadLine());
+                            uri += "/json/authors/" + id;
+                            break;
+                        case 5:
+                            Console.WriteLine("Podaj ID:");
+                            id = Convert.ToInt32(Console.ReadLine());
+                            json += "\"ID\": " + id + ", ";
+                            Console.WriteLine("Podaj tytuł:");
+                            json += "\"Name\": \"" + Console.ReadLine() + "\", ";
+                            Console.WriteLine("Podaj ID autora:");
+                            json += "\"Author\": " + Convert.ToInt32(Console.ReadLine()) + " }";
+                            uri += "/json/items";
+                            method = "post";
+                            break;
+                        case 6:
+                           Console.WriteLine("Podaj ID:");
+                           id = Convert.ToInt32(Console.ReadLine());
+                           json += "\"ID\": " + id + ", ";
+                           Console.WriteLine("Podaj tytuł:");
+                           json += "\"Name\": \"" + Console.ReadLine() + "\", ";
+                           Console.WriteLine("Podaj ID autora:");
+                           json += "\"Author\": " + Convert.ToInt32(Console.ReadLine()) + " }";
+                           uri += "/json/items/" + id;
+                           method = "put";
+                           break;
+                       case 7:
+                           Console.WriteLine("Podaj ID:");
+                           method = "delete";
+                           id = Convert.ToInt32(Console.ReadLine());
+                           uri += "/json/items/" + id;
+                           break;
+                        default:
+                            break;
+                    }
                     HttpWebRequest req = WebRequest.Create(uri) as HttpWebRequest;
+
                     req.KeepAlive = false;
                     req.Method = method.ToUpper();
+                    Console.WriteLine(json);
+                    Console.WriteLine(uri);
 
-           
+
                     switch (method.ToUpper())
                     {
                         case "GET":
                             break;
                         case "POST":
                             req.ContentType = "application/json"; 
-                                 Console.WriteLine("Wklej zawartosc XML-a lub JSON - a(w jednej linii!)");
 
-                            string dane = Console.ReadLine();
-                            //przekodowanie tekstu wiadomosci:
-                            byte[] bufor = Encoding.UTF8.GetBytes(dane);
+                            byte[] bufor = Encoding.UTF8.GetBytes(json);
                             req.ContentLength = bufor.Length;
                             Stream postData = req.GetRequestStream();
                             postData.Write(bufor, 0, bufor.Length);
                             postData.Close();
                             break;
                         case "PUT":
-                            Console.WriteLine("Wklej zawartosc XML-a lub JSON - a(w jednej linii!)");
-
-                            string danePUT = Console.ReadLine();
+                            req.ContentType = "application/json";
                             //przekodowanie tekstu wiadomosci:
-                            byte[] buforPUT = Encoding.UTF8.GetBytes(danePUT);
+                            byte[] buforPUT = Encoding.UTF8.GetBytes(json);
                             req.ContentLength = buforPUT.Length;
                             Stream putData = req.GetRequestStream();
                             putData.Write(buforPUT, 0, buforPUT.Length);
@@ -92,7 +136,8 @@ namespace Client
                     responseStream.Close();
                     resp.Close();
                     Console.WriteLine(responseString);
-                }
+                    }
+
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message.ToString());
