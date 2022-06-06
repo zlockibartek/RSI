@@ -1,0 +1,310 @@
+<html>
+  <head>
+    <title>Sklep</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      let myUrl = "http://localhost:51816/RestService.svc";
+      let product = {
+        id: 0,
+        name: "",
+        number: 0,
+        quantity: 0,
+      };
+
+    //   function getAllData() {
+    //     $.ajax({
+    //       type: "GET",
+    //       url: myUrl + "/json/get_all",
+    //       contentType: "application/json; charset=utf-8",
+    //       dataType: "jsonp",
+    //       success: function (data, status, xhr) {},
+    //       error: function (jqXhr, textStatus, errorMessage) {
+    //         alert("Error " + textStatus);
+    //         console.log(jqXhr);
+    //       },
+    //     });
+    //   }
+
+      function deleteProduct(id) {
+        let confirmed = confirm("Czy na pewno chcesz usunąć ten produkt?");
+        if (confirmed) {
+          let xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+              loadDoc();
+              alert(this.responseText);
+            }else if(this.readyState == 4){
+              alert(this.statusText);
+          }
+          };
+          xhttp.open("DELETE", myUrl + "/products/" + id, true);
+          xhttp.send();
+        }
+      }
+
+      function modifyProduct(id) {
+        document.getElementById("modifyTitle").scrollIntoView();
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            let data = JSON.parse(this.response);
+            $("#modifyID").val(data.id);
+            $("#modifyName").val(data.name);
+            $("#modifyPrice").val(data.number);
+            $("#modifyQuantity").val(data.quantity);
+          }
+        };
+        xhttp.open("GET", myUrl + "/products/" + id, true);
+        xhttp.send();
+      }
+
+      function buyProduct(id) {
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            loadDoc();
+          } else if(this.readyState == 4){
+              alert(this.statusText);
+          }
+        };
+        xhttp.open("PATCH", myUrl + "/products/" + id + '/buy', true);
+        xhttp.send();
+      }
+
+      function showAllData(msg) {
+        $("#data_table tbody").remove();
+        $.each(msg, function (id, product) {
+          if ($("#data_table tbody").length == 0) {
+            $("#data_table").append("<tbody></tbody>");
+          }
+          $("#data_table tbody").append(
+            "<tr>" +
+              "<td>" +
+              product.id +
+              "</td>" +
+              "<td>" +
+              product.name +
+              "</td>" +
+              "<td>" +
+              (Math.round(product.number * 100) / 100).toFixed(2) +
+              " pln</td>" +
+              "<td>" +
+              product.quantity +
+              "</td>" +
+              `<td><button onclick="buyProduct(` +
+              product.id +
+              `)" class="btn btn-primary">Kup</button></td>` +
+              `<td><button onclick="modifyProduct(` +
+              product.id +
+              `)" class="btn btn-warning">Modyfikuj</button></td>` +
+              `<td><button onclick="deleteProduct(` +
+              product.id +
+              `)" class="btn btn-danger">Usuń</button></td>` +
+              "</tr>"
+          );
+        });
+      }
+
+      function addProd() {
+        let data = product;
+        data.id = -1//$("#addID").val();
+        data.name = $("#addName").val();
+        data.number = $("#addPrice").val();
+        data.quantity = $("#addQuantity").val();
+
+        console.log(data);
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            loadDoc();
+            alert(this.responseText);
+          }else if(this.readyState == 4){
+              alert(this.statusText);
+          }
+        };
+        xhttp.open("POST", myUrl + "/products", true);
+        xhttp.setRequestHeader(
+          "Content-type",
+          "application/json; charset=utf-8"
+        );
+        xhttp.send(JSON.stringify(data));
+      }
+
+      function modifyProd() {
+        let data = product;
+        data.id = $("#modifyID").val();
+        data.name = $("#modifyName").val();
+        data.number = $("#modifyPrice").val();
+        data.quantity = $("#modifyQuantity").val();
+
+        console.log(data);
+
+        // $.ajax({
+        //   type: "PUT",
+        //   url: myUrl + "/json/modify",
+        //   contentType: "application/json; charset=utf-8",
+        //   data: JSON.stringify(data),
+        //   success: function (data, status, xhr) {
+        //
+        //   },
+        //   error: function (jqXhr, textStatus, errorMessage) {
+        //     alert("Error " + textStatus);
+        //     console.log(jqXhr);
+        //   },
+        // });
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            loadDoc();
+            alert(this.responseText);
+          }else if(this.readyState == 4){
+              alert(this.statusText);
+          }
+        };
+        xhttp.open("PUT", myUrl + "/products", true);
+        xhttp.setRequestHeader(
+          "Content-type",
+          "application/json; charset=utf-8"
+        );
+        xhttp.send(JSON.stringify(data));
+      }
+
+      function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            showAllData(JSON.parse(this.response));
+          }else if(this.readyState == 4){
+              alert(this.statusText);
+          }
+        };
+        xhttp.open("GET", myUrl + "/products", true);
+        xhttp.send();
+      }
+
+      $(document).ready(function () {
+        loadDoc();
+        $("#addForm").on("submit", function (e) {
+          e.preventDefault();
+          if (e) addProd();
+        });
+
+        $("#modifyForm").on("submit", function (e) {
+          e.preventDefault();
+          if (e) modifyProd();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container" style="padding-bottom: 200px">
+      <h1>Sklep</h1>
+      <br />
+      <section>
+        <h3>Lista produktów</h3>
+
+        <table id="data_table" class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Produkt</th>
+              <th scope="col">Cena</th>
+              <th scope="col">Liczba sztuk</th>
+              <th scope="col">Kup produkt</th>
+              <th scope="col">Modyfikuj produkt</th>
+              <th scope="col">Usuń produkt</th>
+            </tr>
+          </thead>
+        </table>
+      </section>
+
+      <br />
+      <section>
+        <h3>Dodaj produktu</h3>
+        <br />
+
+        <form id="addForm" class="border-bottom" style="padding-bottom: 50px">
+          <!-- <div class="mb-3">
+            <label for="addID" class="form-label">ID</label>
+            <input type="number" class="form-control" id="addID" required />
+          </div> -->
+          <div class="mb-3">
+            <label for="addName" class="form-label">Nazwa</label>
+            <input type="text" class="form-control" id="addName" required />
+          </div>
+          <div class="mb-3">
+            <label for="addPrice" class="form-label">Cena</label>
+            <input
+              type="number"
+              class="form-control"
+              id="addPrice"
+              step="0.01"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="addQuantity" class="form-label">Liczba produktów</label>
+            <input
+              type="number"
+              class="form-control"
+              id="addQuantity"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary" id="addProd">
+            Dodaj
+          </button>
+        </form>
+      </section>
+
+      <br />
+      <section>
+        <h3 id="modifyTitle">Modyfikuj produktu</h3>
+        <br />
+
+        <form id="modifyForm">
+          <div class="mb-3">
+            <label for="modifyID" class="form-label">ID</label>
+            <input disabled type="number" class="form-control" id="modifyID" required />
+          </div>
+          <div class="mb-3">
+            <label for="modifyName" class="form-label">Nazwa</label>
+            <input type="text" class="form-control" id="modifyName" required />
+          </div>
+          <div class="mb-3">
+            <label for="modifyPrice" class="form-label">Cena</label>
+            <input
+              type="number"
+              class="form-control"
+              id="modifyPrice"
+              step="0.01"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="modifyQuantity" class="form-label"
+              >Liczba produktów</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="modifyQuantity"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary" id="modifyProd">
+            Modyfikuj
+          </button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
