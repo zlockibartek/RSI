@@ -14,7 +14,7 @@ namespace Client
             Console.WriteLine(Environment.UserName);
             Console.WriteLine(Environment.OSVersion.ToString());
             Console.WriteLine(Environment.Version.ToString());
-            Console.WriteLine(Dns.GetHostEntry(Dns.GetHostName()).AddressList[0].ToString());
+            Console.WriteLine(Dns.GetHostEntry(Dns.GetHostName()).AddressList[1].ToString());
         }
     }
     class Program
@@ -26,8 +26,8 @@ namespace Client
             {
                 try
                 {
-                    //string uri = "http://zpi03.solidcp.ii.pwr.edu.pl/RestService.svc";
-                    string uri = "http://localhost:49736/RestService.svc";
+                    string uri = "http://zpi03.solidcp.ii.pwr.edu.pl/RestService.svc";
+                    //string uri = "http://localhost:49736/RestService.svc";
 
                     Console.WriteLine("1: Wybierz wszystkie książki");
                     Console.WriteLine("2: Wybierz książkę o podanym ID");
@@ -94,8 +94,7 @@ namespace Client
 
                     req.KeepAlive = false;
                     req.Method = method.ToUpper();
-                    Console.WriteLine(json);
-                    Console.WriteLine(uri);
+                   
 
 
                     switch (method.ToUpper())

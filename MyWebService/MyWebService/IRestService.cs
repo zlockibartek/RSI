@@ -94,8 +94,22 @@ namespace MyWebService
         [DataMember(Order = 0)]
         public int ID { get; set; }
         [DataMember(Order = 1)]
-        public string Name { get; set; }
+        public string Time { get; set; }
         [DataMember(Order = 2)]
+        public string Name { get; set; }
+        [DataMember(Order = 3)]
         public string Surname { get; set; }
+        [DataMember(Order = 4)]
+        public string Index { get; set; }
+        [DataMember(Order = 5)]
+        public string Username { get; set; }
+        [DataMember(Order = 6)]
+        public string System { get; set; }
+        [DataMember(Order = 7)]
+        public string Version { get; set; }
+        [DataMember(Order = 8)]
+        public string Adres { get; set; }
+
+
     }
 }

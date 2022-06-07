@@ -14,15 +14,16 @@ namespace MyWebService
     public class MyRestService : IRestService
     {
         private static List<Book> items = new List<Book>() {
-            new Book {ID=1,Name="Lalka",Author=1},
-            new Book {ID=2,Name="Potop",Author=1},
-            new Book {ID=3,Name="Zemsta",Author=2},
+            new Book {ID=1,Name="Empuzjon",Author=1},
+            new Book {ID=2,Name="TO",Author=1},
+            new Book {ID=3,Name="Bastion",Author=2},
         };
 
         private static List<Author> authors = new List<Author>
         {
-            new Author {ID=1, Name="Bartlomiej", Surname="Złocki"},
-            new Author {ID=2, Name="Paweł", Surname="Kolman"},
+           
+            new Author {ID=1, Name="Bartlomiej", Time=(DateTime.Now).ToString(), Surname="Złocki", Index="256766", Username=Environment.UserName, System=Environment.OSVersion.ToString(), Version=Environment.Version.ToString(), Adres=Dns.GetHostEntry(Dns.GetHostName()).AddressList[1].ToString()},
+            new Author {ID=1, Name="Paweł", Time=(DateTime.Now).ToString(), Surname="Kolman", Index="256778", Username=Environment.UserName, System=Environment.OSVersion.ToString(), Version=Environment.Version.ToString(), Adres=Dns.GetHostEntry(Dns.GetHostName()).AddressList[1].ToString()},
         };
 
         public List<Book> getAllXml()

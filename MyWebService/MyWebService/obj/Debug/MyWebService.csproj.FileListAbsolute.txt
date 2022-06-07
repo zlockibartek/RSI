@@ -47,8 +47,8 @@ C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\MyWebSer
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\MyWebService\bin\System.Numerics.Vectors.xml
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\MyWebService\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\MyWebService\bin\System.Text.Encoding.CodePages.xml
-C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\MyWebService\obj\Debug\MyWebService.csproj.AssemblyReference.cache
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\MyWebService\obj\Debug\MyWebService.csproj.CoreCompileInputs.cache
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\MyWebService\obj\Debug\MyWebService.csproj.CopyComplete
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\MyWebService\obj\Debug\MyWebService.dll
 C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\MyWebService\obj\Debug\MyWebService.pdb
+C:\Users\zlock\OneDrive\Pulpit\Studia\Semestr 6\RSI\Lab1_2\MyWebService\MyWebService\obj\Debug\MyWebService.csproj.AssemblyReference.cache
