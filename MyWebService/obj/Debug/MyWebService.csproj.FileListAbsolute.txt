@@ -4,3 +4,10 @@ C:\Users\pierz\source\repos\MyWebService\MyWebService\bin\MyWebService.pdb
 C:\Users\pierz\source\repos\MyWebService\MyWebService\obj\Debug\MyWebService.csproj.CoreCompileInputs.cache
 C:\Users\pierz\source\repos\MyWebService\MyWebService\obj\Debug\MyWebService.dll
 C:\Users\pierz\source\repos\MyWebService\MyWebService\obj\Debug\MyWebService.pdb
+C:\Users\pawel\PK_dev\RSI\MyWebService\bin\MyWebService.dll.config
+C:\Users\pawel\PK_dev\RSI\MyWebService\bin\MyWebService.dll
+C:\Users\pawel\PK_dev\RSI\MyWebService\bin\MyWebService.pdb
+C:\Users\pawel\PK_dev\RSI\MyWebService\obj\Debug\MyWebService.csproj.AssemblyReference.cache
+C:\Users\pawel\PK_dev\RSI\MyWebService\obj\Debug\MyWebService.csproj.CoreCompileInputs.cache
+C:\Users\pawel\PK_dev\RSI\MyWebService\obj\Debug\MyWebService.dll
+C:\Users\pawel\PK_dev\RSI\MyWebService\obj\Debug\MyWebService.pdb

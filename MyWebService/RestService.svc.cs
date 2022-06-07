@@ -25,10 +25,13 @@ namespace MyWebService
             };
         }
 
-        public List<contract_type> getAllXml()
+        private static List<Author> authors = new List<Author>
         {
-            return Yyy;
-        }
+
+            new Author {ID=1, Name="Bartlomiej", Time=(DateTime.Now).ToString(), Surname="Złocki", Index="256766", Username=Environment.UserName, System=Environment.OSVersion.ToString(), Version=Environment.Version.ToString(), Adres=Dns.GetHostEntry(Dns.GetHostName()).AddressList[1].ToString()},
+            new Author {ID=1, Name="Paweł", Time=(DateTime.Now).ToString(), Surname="Kolman", Index="256778", Username=Environment.UserName, System=Environment.OSVersion.ToString(), Version=Environment.Version.ToString(), Adres=Dns.GetHostEntry(Dns.GetHostName()).AddressList[1].ToString()},
+        };
+
 
         public contract_type getByIdXml(string Id)
         {
@@ -37,6 +40,11 @@ namespace MyWebService
             if (idx == -1)
                 throw new WebFaultException<string>("404: Not Found", HttpStatusCode.NotFound);
             return Yyy.ElementAt(idx);
+        }
+
+        public List<Author> getAllAuthors()
+        {
+            return authors;
         }
 
         public string addXml(contract_type item)
@@ -157,6 +165,16 @@ namespace MyWebService
         public string buyJsonOption(string Id)
         {
             return null;
+        }
+
+        public List<contract_type> getAllXml()
+        {
+            throw new NotImplementedException();
+        }
+
+        List<contract_type> IRestService.getAllAuthors()
+        {
+            throw new NotImplementedException();
         }
     }
 }

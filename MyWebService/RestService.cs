@@ -35,7 +35,13 @@ namespace MyWebService
         [OperationContract]
         [WebGet(UriTemplate = "/products/{id}",
         ResponseFormat = WebMessageFormat.Json)]
+        
         contract_type getByIdJson(string Id);
+        [OperationContract]
+        [WebGet(UriTemplate = "/authors",
+        ResponseFormat = WebMessageFormat.Json)]
+        List<contract_type> getAllAuthors();
+        
         [OperationContract]
         [WebInvoke(UriTemplate = "/products",
         Method = "POST",
@@ -80,5 +86,30 @@ namespace MyWebService
         public double number { get; set; }
         [DataMember(Order = 3)]
         public int quantity { get; set; }
+    }
+
+    [DataContract]
+    public class Author
+    {
+        [DataMember(Order = 0)]
+        public int ID { get; set; }
+        [DataMember(Order = 1)]
+        public string Time { get; set; }
+        [DataMember(Order = 2)]
+        public string Name { get; set; }
+        [DataMember(Order = 3)]
+        public string Surname { get; set; }
+        [DataMember(Order = 4)]
+        public string Index { get; set; }
+        [DataMember(Order = 5)]
+        public string Username { get; set; }
+        [DataMember(Order = 6)]
+        public string System { get; set; }
+        [DataMember(Order = 7)]
+        public string Version { get; set; }
+        [DataMember(Order = 8)]
+        public string Adres { get; set; }
+
+
     }
 }

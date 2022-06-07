@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta charset="UTF-8"/>
     <title>Sklep</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -9,27 +10,13 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-      let myUrl = "http://localhost:51816/RestService.svc";
+      let myUrl = "http://zpi03.solidcp.ii.pwr.edu.pl/RestService.svc";
       let product = {
         id: 0,
         name: "",
         number: 0,
         quantity: 0,
       };
-
-    //   function getAllData() {
-    //     $.ajax({
-    //       type: "GET",
-    //       url: myUrl + "/json/get_all",
-    //       contentType: "application/json; charset=utf-8",
-    //       dataType: "jsonp",
-    //       success: function (data, status, xhr) {},
-    //       error: function (jqXhr, textStatus, errorMessage) {
-    //         alert("Error " + textStatus);
-    //         console.log(jqXhr);
-    //       },
-    //     });
-    //   }
 
       function deleteProduct(id) {
         let confirmed = confirm("Czy na pewno chcesz usunąć ten produkt?");
@@ -102,7 +89,7 @@
               `)" class="btn btn-primary">Kup</button></td>` +
               `<td><button onclick="modifyProduct(` +
               product.id +
-              `)" class="btn btn-warning">Modyfikuj</button></td>` +
+              `)" class="btn btn-warning">Edytuj</button></td>` +
               `<td><button onclick="deleteProduct(` +
               product.id +
               `)" class="btn btn-danger">Usuń</button></td>` +
@@ -202,11 +189,15 @@
           if (e) modifyProd();
         });
       });
+
+      function MyData() {
+        alert("----- MyData -----\nPaweł Kolman\n256778\nzpi03.solidcp.ii.pwr.edu.pl\nChrome 102 on Windows 11");
+      }
     </script>
   </head>
   <body>
     <div class="container" style="padding-bottom: 200px">
-      <h1>Sklep</h1>
+      <h1 onclick="confetti.toggle()">Sklep</h1>
       <br />
       <section>
         <h3>Lista produktów</h3>
@@ -218,9 +209,9 @@
               <th scope="col">Produkt</th>
               <th scope="col">Cena</th>
               <th scope="col">Liczba sztuk</th>
-              <th scope="col">Kup produkt</th>
-              <th scope="col">Modyfikuj produkt</th>
-              <th scope="col">Usuń produkt</th>
+              <th scope="col">Kup</th>
+              <th scope="col">Edytuj</th>
+              <th scope="col">Usuń</th>
             </tr>
           </thead>
         </table>
@@ -228,14 +219,10 @@
 
       <br />
       <section>
-        <h3>Dodaj produktu</h3>
+        <h3>Dodaj</h3>
         <br />
 
         <form id="addForm" class="border-bottom" style="padding-bottom: 50px">
-          <!-- <div class="mb-3">
-            <label for="addID" class="form-label">ID</label>
-            <input type="number" class="form-control" id="addID" required />
-          </div> -->
           <div class="mb-3">
             <label for="addName" class="form-label">Nazwa</label>
             <input type="text" class="form-control" id="addName" required />
@@ -267,7 +254,7 @@
 
       <br />
       <section>
-        <h3 id="modifyTitle">Modyfikuj produktu</h3>
+        <h3 id="modifyTitle">Edytuj</h3>
         <br />
 
         <form id="modifyForm">
@@ -301,10 +288,40 @@
             />
           </div>
           <button type="submit" class="btn btn-primary" id="modifyProd">
-            Modyfikuj
+            Edytuj
           </button>
         </form>
       </section>
+
+      <div class="text-center"><button onclick="MyData()" class="btn btn-primary">MyData</button></div>
     </div>
   </body>
 </html>
+
+<style>
+  body {
+    font-family: Roboto;
+    background: #eee;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2em;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 3;
+}
+
+button.btn {
+    border-radius: 0;
+}
+
+.form-control {
+    border-radius: 0 !important;
+}
+</style>
+
+<script src="https://danceit.pl/PKassets/js/plugins/confetti.js"></script>

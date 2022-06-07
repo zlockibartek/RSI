@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\pawel\PK_dev\RSI\MyWebService\bin\app.publish\</_PublishTargetUrl>
+    <History>True|2022-06-07T05:50:08.5272788Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/MyWebService.dll">
+      <publishTime>06/07/2022 07:50:08</publishTime>
+    </File>
+    <File Include="bin/MyWebService.pdb">
+      <publishTime>06/07/2022 07:50:08</publishTime>
+    </File>
+    <File Include="RestService.svc">
+      <publishTime>06/06/2022 22:51:57</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/07/2022 07:50:08</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

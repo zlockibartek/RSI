@@ -1,0 +1,7 @@
+C:\Users\pawel\PK_dev\RSI\MyWebService\bin\MyWebService.dll.config
+C:\Users\pawel\PK_dev\RSI\MyWebService\bin\MyWebService.dll
+C:\Users\pawel\PK_dev\RSI\MyWebService\bin\MyWebService.pdb
+C:\Users\pawel\PK_dev\RSI\MyWebService\obj\Release\MyWebService.csproj.AssemblyReference.cache
+C:\Users\pawel\PK_dev\RSI\MyWebService\obj\Release\MyWebService.csproj.CoreCompileInputs.cache
+C:\Users\pawel\PK_dev\RSI\MyWebService\obj\Release\MyWebService.dll
+C:\Users\pawel\PK_dev\RSI\MyWebService\obj\Release\MyWebService.pdb
